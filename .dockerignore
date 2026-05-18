@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+*.tar.gz
+authtoken.txt
+.git
+.gitignore
+.smoke
+test-smoke.js
+smoke.log
+tls-check.js
