@@ -2,6 +2,8 @@
 
 # HMIP HCU Plugin: Fake Switches
 
+📦 **[Download hmip-plugin-fake-switches-1.0.0.tar.gz](https://github.com/fabiorenner-hub/hmip-hcu-fakeswitch/releases/latest/download/hmip-plugin-fake-switches-1.0.0.tar.gz)** — install via HCUweb → *Developer mode → Plugins → Install from file*.
+
 A Homematic IP Home Control Unit (HCU) plugin that exposes virtual switches
 (and an optional dimmable light) in the HMIP app. Useful for testing
 automations, scenes and groups without real hardware.
