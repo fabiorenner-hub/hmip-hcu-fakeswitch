@@ -60,6 +60,11 @@ chmod +x build.sh
 
 Herausgegeben von **Fabio Renner**.
 
+### Verwendete Drittanbieter
+
+- Gebaut gegen die [Homematic IP Connect API 1.0.1](https://github.com/homematicip/connect-api) von eQ-3.
+- Keine externen Dienste oder Hersteller-APIs — rein virtuelle Geräte.
+
 ## Lizenz
 
 Apache-2.0

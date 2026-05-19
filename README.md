@@ -62,6 +62,11 @@ chmod +x build.sh
 
 Issued by **Fabio Renner**.
 
+### Third-party components
+
+- Built against the [Homematic IP Connect API 1.0.1](https://github.com/homematicip/connect-api) by eQ-3.
+- No external services or vendor APIs — purely virtual devices.
+
 ## License
 
 Apache-2.0
