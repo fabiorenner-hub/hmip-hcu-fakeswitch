@@ -1,4 +1,4 @@
-> ðŸ‡¬ðŸ‡§ English | [ðŸ‡©ðŸ‡ª Deutsch](README.de.md)
+> 🇬🇧 English | [🇩🇪 Deutsch](README.de.md)
 
 <p align="center">
   <img src="icon.svg" alt="hmip-plugin-fake-switches icon" width="128" height="128"/>
@@ -6,17 +6,13 @@
 
 # HMIP HCU Plugin: Fake Switches
 
-ðŸ“¦ **[Download hmip-plugin-fake-switches-1.1.1.tar.gz](https://github.com/fabiorenner-hub/hmip-hcu-fakeswitch/releases/latest/download/hmip-plugin-fake-switches-1.1.1.tar.gz)** â€” install via HCUweb â†’ *Developer mode â†’ Plugins â†’ Install from file*.
+📦 **[Download hmip-plugin-fake-switches-1.1.2.tar.gz](https://github.com/fabiorenner-hub/hmip-hcu-fakeswitch/releases/latest/download/hmip-plugin-fake-switches-1.1.2.tar.gz)** — install via HCUweb → *Developer mode → Plugins → Install from file*.
 
 GitHub: <https://github.com/fabiorenner-hub/hmip-hcu-fakeswitch>
 
 A Homematic IP Home Control Unit (HCU) plugin that exposes virtual switches
-(and an optional dimmable light) in the HMIP app. Useful for testing automations,
-scenes and groups without real hardware.
-
-Built and validated against the official
-[Homematic IP Connect API](https://github.com/homematicip/connect-api)
-(documentation revision `1.0.1`).
+(and an optional dimmable light) in the HMIP app. Useful for testing
+automations, scenes and groups without real hardware.
 
 ## Support
 
@@ -26,8 +22,8 @@ me keep the lights on while building more HCU plugins:
 
 ## Devices in the HMIP app
 
-- **Fake Switch 1..N** â€” `SWITCH` with `switchState`, `onTime`, `maintenance`
-- **Fake Light** (optional) â€” `LIGHT` with `switchState`, `dimming`, `onTime`, `maintenance`
+- **Fake Switch 1..N** — `SWITCH` with `switchState`, `onTime`, `maintenance`
+- **Fake Light** (optional) — `LIGHT` with `switchState`, `dimming`, `onTime`, `maintenance`
 
 All switch states are persisted in `/data/state.json`, surviving restarts and
 plugin updates.
@@ -36,42 +32,31 @@ plugin updates.
 
 1. Download `hmip-plugin-fake-switches-<version>.tar.gz` from the
    [Releases](https://github.com/fabiorenner-hub/hmip-hcu-fakeswitch/releases).
-2. In HCUweb open *Developer mode â†’ Plugins â†’ Upload* and choose the file.
-3. Configure under *Plugins â†’ Fake Switches â†’ Configure*.
+2. In HCUweb open *Developer mode → Plugins → Upload* and choose the file.
+3. Configure under *Plugins → Fake Switches → Configure*.
 
 ## Configuration via the HCU UI
 
-After installing, in *Plugins â†’ Fake Switches â†’ Configure*:
+After installing, in *Plugins → Fake Switches → Configure*:
 
-**Switches group**
-
-- **Number of switches** â€” 1 to 20
-- **Name prefix** â€” for switches without an individual name
-- **Individual names** (optional) â€” one name per line; order = switch number
-
-**Light group**
-
-- **Create fake light** â€” boolean
-- **Light name**
-
-**Extras group**
-
-- **Attach maintenance feature** â€” reports `unreach/lowBat/sabotage = false`
+- **Number of switches** (1..20), **Name prefix**, **Individual names**
+- **Create fake light** (boolean), **Light name**
+- **Attach maintenance feature** — reports `unreach/lowBat/sabotage = false`
 
 ## Build and install on the HCU
 
-```bash
-./build.sh    # Linux/macOS
-# or
+```powershell
 ./build.ps1   # Windows
 ```
 
-Result: `hmip-plugin-fake-switches-<version>.tar.gz`. Upload via HCUweb â†’ Plugins â†’ Upload.
+```bash
+chmod +x build.sh
+./build.sh    # macOS / Linux
+```
 
 ## References
 
 - [Homematic IP Connect API](https://github.com/homematicip/connect-api)
-- [Connect API documentation 1.0.1](https://github.com/homematicip/connect-api/blob/main/connect-api-documentation-1.0.1.html)
 
 ## Author
 
