@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-$version    = "1.1.0"
+$version    = "1.1.1"
 $imageTag   = "hmip-plugin-fake-switches:$version"
 $outputFile = "hmip-plugin-fake-switches-$version.tar.gz"
 
@@ -25,3 +25,4 @@ Remove-Item $tarFile
 Write-Host ""
 Write-Host "Done. Upload this file in the HCU web UI (Developer Mode enabled):"
 Write-Host "  $(Resolve-Path $outputFile)"
+
