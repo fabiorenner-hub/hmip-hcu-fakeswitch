@@ -1,6 +1,6 @@
 {
   "name": "hmip-plugin-fake-switches",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Homematic IP HCU plugin that exposes virtual SWITCH and LIGHT devices, useful for testing automations, scenes and groups without real hardware.",
   "author": "Fabio Renner",
   "license": "Apache-2.0",

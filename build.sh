@@ -3,7 +3,7 @@
 
 set -euo pipefail
 
-VERSION="${VERSION:-1.0.0}"
+VERSION="${VERSION:-1.1.0}"
 IMAGE_TAG="hmip-plugin-fake-switches:${VERSION}"
 OUTPUT_FILE="hmip-plugin-fake-switches-${VERSION}.tar.gz"
 
